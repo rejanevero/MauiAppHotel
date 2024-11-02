@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.View.SobreDesenvolvedor"
+             Title="SobreDesenvolvedor"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource Gray200}">
+
+    <ContentPage.Resources>
+        <ResourceDictionary >
+            <Style x:Key="MeuStyle" TargetType="Label">
+                <Setter Property="FontFamily" Value="Caveat" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+
+    <VerticalStackLayout Padding="10,0"
+                         VerticalOptions="FillAndExpand">
+        <Label Text="Sobre: "
+               FontFamily="Caveat"
+               FontSize="45"
+               TextColor="{StaticResource Red}"
+              HorizontalTextAlignment="Center" />
+       
+        <Frame BorderColor="{StaticResource White}">
+            <VerticalStackLayout>
+                
+                <Label Text="Desenvolvedora: Rejane Verônica Oliveira Silva."
+                   Style="{StaticResource MeuStyle}"
+                   FontSize="19"
+                   HorizontalTextAlignment="Center"/>
+
+                <Label Text="Desenvolvido em 02/11/2024."
+                   Style="{StaticResource MeuStyle}"
+                   FontSize="19"
+                   Margin="0,30,0,0"
+                       HorizontalTextAlignment="Center"/>
+            </VerticalStackLayout>
+        </Frame>
+
+        <Label Text="Projeto: "
+               FontFamily="Caveat"
+               FontSize="45"
+               TextColor="{StaticResource Red}"
+               HorizontalTextAlignment="Center"/>
+        
+        <Frame BorderColor="{StaticResource White}">
+            <VerticalStackLayout >
+                <Label Text="Aplicativo para contratação de hospedagem de um Hotel"
+                       Style="{StaticResource MeuStyle}"
+                       FontSize="19"
+                       HorizontalTextAlignment="Center"/>
+            </VerticalStackLayout>
+       
+        </Frame>
+
+        <Button Text="Voltar" BackgroundColor="{StaticResource Red}" Clicked="Button_Clicked" 
+                HorizontalOptions="CenterAndExpand"
+                Style="{StaticResource MeuStyle}"
+                FontSize="18"
+                Margin="40"
+                TextColor="{StaticResource White}"
+                BorderColor="White"
+                BorderWidth="1.5"/>
+    </VerticalStackLayout>
+
+</ContentPage>
